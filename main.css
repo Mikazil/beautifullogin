@@ -1,0 +1,139 @@
+@keyframes anim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+body {
+	background: #131212c2;
+}
+
+div.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+div.header {
+	margin-top: -80%;
+}
+
+div.header-auth p {
+	color:  #e6e6e6bd;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+    margin-left: 3px;
+    width: 349px;
+    text-align: center;
+}
+
+div.header-auth span {
+    background: #3a6eff;
+    border-radius: 10px;
+    height: 26px;
+    color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #3a6eff;
+    padding: 3px;
+}
+
+img.header-footer-auth {
+    margin: auto;
+    margin-top: -50px;
+    display: flex;
+}
+
+input.inputbox {
+    outline: none;
+    margin: auto;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 298px;
+    font: 12px/24px 'Myriad Pro', sans-serif;
+    text-indent: 20px;
+    color: #5a5a5a;
+    background: #2b2a2b8c;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    transition: 0.5s;
+    margin-top: 35px;
+}
+
+input.inputbox:hover {
+	box-shadow: 0px 0px 10px #3a6eff;
+
+}
+
+input.inputbox:focus {
+	color: #999999;
+}
+
+button.enter-login {
+    outline: none;
+    margin-left: 20%;
+    margin: auto;
+    border: none;
+    background: #3a6eff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font: 13px 'Myriad Pro', sans-serif;
+    transition: 0.5s;
+    margin-top: 15%;
+}
+
+button.enter-login:hover {
+    color: white;
+    box-shadow: 0px 0px 10px #3a6eff;
+}
+
+button.sel-logreg{
+    background: linear-gradient(1deg, #3e4b8a, #4b4a4a);
+    padding: 15px;
+    border: #4b4a4a;
+    border-bottom: 4px solid #002cffb8;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin-right: 42px;
+
+}
+
+div.logregbtns{
+padding-left: 12%;
+}
+
+button.sel-logreg:hover {
+    color: white;
+    box-shadow: 0px 0px 10px #3a6eff;
+}
+
+div.regform{
+
+display: none;
+transition: 0.5s;
+
+}
+
+
+div.loginform{
+
+    transition: 0.5s;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<div class="content">
+		<div class="header-auth">
+			<p>FURIO</br><span>Добро пожаловать на сервер</span></p>
+		</div>
+
+		<div class="logregbtns">
+			<button id="loginbtn" class="sel-logreg" onclick="loginjs();">Авторизация</button>
+			<button id="regbtn" class="sel-logreg" onclick="registerjs();">Регистрация</button>
+		</div>
+
+		<div class="loginform" id="lgnfrm">
+			<input id="clicked_nick" type="text" name="account" class="inputbox" spellcheck="false" placeholder="Введите логин">
+			<input id="clicked_pass" type="password" name="account" class="inputbox" placeholder="Введите пароль">
+		</div>
+
+		<div class="regform" id="regfrm">
+			<input id="clicked_nick" type="password" name="passw" class="inputbox" spellcheck="false" placeholder="Придумайте пароль">
+			<input id="clicked_pass" type="password" name="passwcontrol" class="inputbox" placeholder="Повторите пароль">
+			<input id="clicked_nick" type="text" name="anyname" class="inputbox" spellcheck="false" placeholder="поле для текста">			
+		</div>
+	<button id="clicked_login" class="enter-login" type="submite">Войти на аккаунт</button>
+	</div>
+	<script src="js/btns.js"></script>
+	<script type="text/javascript">
+		const sendButton = document.getElementById('clicked_login');
+
+		sendButton.addEventListener("click", () => {
+			const input = document.getElementById('clicked_pass').value;
+			const input_nick = document.getElementById('clicked_nick').value;
+
+			if (input == "" || input_nick == "")
+				return
+
+			cef.emit("loginpage:login", 1, input, input_nick);
+		});
+	</script>
+</body>
+
+</html>
