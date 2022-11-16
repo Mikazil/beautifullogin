@@ -29,19 +29,6 @@
 	<button id="clicked_login" class="enter-login" type="submite">Войти на аккаунт</button>
 	</div>
 	<script src="js/btns.js"></script>
-	<script type="text/javascript">
-		const sendButton = document.getElementById('clicked_login');
-
-		sendButton.addEventListener("click", () => {
-			const input = document.getElementById('clicked_pass').value;
-			const input_nick = document.getElementById('clicked_nick').value;
-
-			if (input == "" || input_nick == "")
-				return
-
-			cef.emit("loginpage:login", 1, input, input_nick);
-		});
-	</script>
 </body>
 
 </html>
